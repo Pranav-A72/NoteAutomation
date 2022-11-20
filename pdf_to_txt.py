@@ -17,15 +17,17 @@ to [climate][climate]
 to [climate]
 '''
 
+import numpy as np
 import tkinter as tk
 from tkinter import filedialog
+from PyPDF2 import PdfReader
 
 root = tk.Tk()
 root.withdraw()
 
 file_path = filedialog.askopenfilename()
 
-from PyPDF2 import PdfReader
+
 corneltext = '' 
 reader = PdfReader(file_path)
 pageNum = reader.getNumPages() - 1
@@ -34,7 +36,7 @@ while pageNum > -1:
     corneltext = page.extract_text() + corneltext
     pageNum -= 1
 
-
+#region textrazor
 # import textrazor
 
 # textrazor.api_key = "fda84616d56c219481d317b308114baf4d94ce274a7dc5255bd86b91"
@@ -44,6 +46,7 @@ while pageNum > -1:
 
 # for entity in response.entities():
 #     print(entity.id)
+#endregion
 
 print(type(corneltext))
 cornel_splited_str = corneltext.splitlines(True)
@@ -57,12 +60,12 @@ emptylimits = len(cornel_splited_str)
 empty_cornel = cornel_splited_str
 removed = 0
 print(emptylimits)
-# print(cornel_splited_str[emptycounter])
+print(cornel_splited_str[emptycounter])
 while emptycounter < emptylimits :
     if emptycounter >= len(empty_cornel):
         emptycounter = emptylimits
     else:
-        if cornel_splited_str[emptycounter] == ' \n' or cornel_splited_str[emptycounter] == '  \n' or cornel_splited_str[emptycounter] == '   \n':
+        if cornel_splited_str[emptycounter] == '\n' or cornel_splited_str[emptycounter] == ' \n' or cornel_splited_str[emptycounter] == '  \n':
             remover = emptycounter + removed
             empty_cornel.pop(remover)
             # print(emptycounter)
@@ -73,5 +76,9 @@ while emptycounter < emptylimits :
             # print(emptycounter)
             # print(len(empty_cornel))
             # print("b")
-print(empty_cornel)
-print(len(empty_cornel))
+
+#print(empty_cornel)
+#print(len(empty_cornel))
+
+block_array = np.asarray(empty_cornel)
+print(block_array)
