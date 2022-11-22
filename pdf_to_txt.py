@@ -1,22 +1,3 @@
-'''
-# 1.) isolate every "block" (edited)
-# [10:00 PM]
-2.) isolate sentacnes/topics
-ex: Climate. What is a climate? Why is it important to agriculture?
-Into: [climate][what is climate][why is it important] (edited)
-[10:00 PM]
-3.) emlinate unless words
-ex: [why is important to agriculture] to [important, arguculture]
-[10:00 PM]
-4. find the first sentance with that phrase
-[10:01 PM]
-5.) elimate repeats
-ex: [climate][what is climate]
-to [climate][climate]
-[10:01 PM]
-to [climate]
-'''
-
 import tkinter as tk
 from tkinter import filedialog
 
@@ -81,7 +62,7 @@ empty_counter2 = 0
 edit_emptycornel = empty_cornel
 # print(edit_emptycornel[2])
 
-redundent_words = [' the ', ' that ', ' it ', ' than ', 'Notes', 'Cornell', 'Questions', ' does ', ' or ', ' from ', ' to ', ' and', "(", ")", ".", ",", "?", "is ", " important", "Study", "Describe", " are", " of", "Date", "Name", ":", "Class", "/", "Period", "5", "6", "7", "8", "9", "0", ' as', ' by', ' in', "As ", '\'', " do", " most", " we", " a ", "1", "2", "3", "4", " world", " level", " regard", " people" " v", " vs", " role", " at ", "Look ", " look", "Why ", "How ", "What ", "Who ", "Where ", 'why ', " what", " how", ' who', ' when', ' where', '’s', 'v.', "v ", "high ", " low", "with ", " see ", " per ", " used", " factors", " money", " in ", "countries ", "theredifference", "measurecountry", "population", " work", " collected", " core", "periphery"]
+redundent_words = [' the ', ' that ', ' it ', ' than ', 'Notes', 'Cornell', 'Questions', ' does ', ' or ', ' from ', ' to ', ' and ', "(", ")", ".", ",", "?", " is ", " important", "Study", "Describe", " are ", " of ", " Date ", " Name ", ":", " Class ", "/", " Period ", "5", "6", "7", "8", "9", "0", ' as', ' by', ' in ', "As ", '\'', " do", " most ", " we", " a ", "1", "2", "3", "4", " world ", " level ", " regard ", " people " " v ", " vs ", " role ", " at ", "Look ", " look ", "Why ", "How ", "What ", "Who ", "Where ", ' why ', " what ", " how ", ' who ', ' when ', ' where ', '’s', 'v.', "v ", " high ", " low", "with ", " see ", " per ", " used ", " factors ", " money ", " in ", " countries ", "theredifference", "measurecountry", " population ", " work ", " collected"]
 empty_counter = 0
 emptylimits = len(redundent_words)
 
@@ -308,3 +289,6 @@ while number < len(edit_emptycornel) - 1:
                 with open(file_path, 'a') as f:
                     f.write("\n" + _saver[number] + "\n\n" + summary + "\n\n\n")
     number +=1
+        
+
+
