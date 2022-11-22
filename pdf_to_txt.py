@@ -307,3 +307,4 @@ while number < len(edit_emptycornel) - 1:
                 print(" ")
                 with open(file_path, 'a') as f:
                     f.write("\n" + _saver[number] + "\n\n" + summary + "\n\n\n")
+    number +=1
