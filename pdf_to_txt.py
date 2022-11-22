@@ -223,72 +223,21 @@ while number < len(edit_emptycornel) - 1:
 
 
 
+#summarization
+import tkinter as tk
+from tkinter import filedialog
+
+root = tk.Tk()
+root.withdraw()
+
+file_path = filedialog.askopenfilename()
+
+with open(file_path, 'a') as f:
+    f.write("\n" + saver[number] + "\n\n" + block + "\n\n\n")
 
 
-
-
-            import nltk 
-            from nltk.corpus import stopwords
-            from nltk.tokenize import word_tokenize, sent_tokenize
-
-            # Input text - to summarize 
-            text = block
-
-            # Tokenizing the text
-            stopWords = set(stopwords.words("english"))
-            words = word_tokenize(text)
-
-            # Creating a frequency table to keep the 
-            # score of each word
-
-            freqTable = dict()
-            for word in words:
-                word = word.lower()
-                if word in stopWords:
-                    continue
-                if word in freqTable:
-                    freqTable[word] += 1
-                else:
-                    freqTable[word] = 1
-
-            # Creating a dictionary to keep the score
-            # of each sentence
-            sentences = sent_tokenize(text)
-            sentenceValue = dict()
-            # print(sentences)
-            for sentence in sentences:
-                for word, freq in freqTable.items():
-                    if word in sentence.lower():
-                        if sentence in sentenceValue:
-                            sentenceValue[sentence] += freq
-                        else:
-                            sentenceValue[sentence] = freq
-
-
-
-            sumValues = 0
-            for sentence in sentenceValue:
-                sumValues += sentenceValue[sentence]
-
-            # Average value of a sentence from the original text
-
-            average = int(sumValues / len(sentenceValue))
-
-            # Storing sentences into our summary.
-            summary = ''
-            for sentence in sentences:
-                if (sentence in sentenceValue) and (sentenceValue[sentence] > (1.2 * average)):
-                    summary += " " + sentence
-            if summary == " " or summary == "":
-                zero = 0
-            else:
-                print(_saver[number])
-                print("")
-                print(summary)
-                print(" ")
-                with open(file_path, 'a') as f:
-                    f.write("\n" + _saver[number] + "\n\n" + summary + "\n\n\n")
-    number +=1
-        
+with open(file_path, 'r') as f:
+    contents = f.read()
+print(contents)
 
 
