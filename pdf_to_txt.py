@@ -43,8 +43,8 @@ empty_cornel = cornel_splited_str
 
 removed = 0
 
-print(cornel_splited_str)
-print("    ")
+#print(cornel_splited_str)
+#print("    ")
 counter5 = 0
 blanks = ["   \n", "  \n", " \n"]
 while counter5 < len(cornel_splited_str) - 1:
@@ -57,7 +57,7 @@ while counter5 < len(cornel_splited_str) - 1:
     else:
         cornel_splited_str[counter5] = cornel_splited_str[counter5] + cornel_splited_str[counter5 + 1]
         cornel_splited_str.pop(counter5 + 1)
-print(cornel_splited_str)
+#print(cornel_splited_str)
 
 # print(cornel_splited_str[2])
 
@@ -99,9 +99,9 @@ while empty_counter2 < len(edit_emptycornel) - 1:
 
 
 
-print(edit_emptycornel[28])
+#print(edit_emptycornel[28])
 morewords_cornel = edit_emptycornel[28].split()
-print(morewords_cornel)
+#print(morewords_cornel)
 
 
 
@@ -125,12 +125,12 @@ paratext = contents.split("\n")
 
 
 number = 0
-print(edit_emptycornel[number])
-print(empty_cornel[number])
+#print(edit_emptycornel[number])
+#print(empty_cornel[number])
 
 while number < len(edit_emptycornel) - 1:
     morewords_cornel = edit_emptycornel[number].split()
-    print(morewords_cornel)
+    #print(morewords_cornel)
     question_words = ["Why", "How", "What", "Who", "Where", 'why', "what", "how", 'who', 'when', 'where']
     counter4 = 0
     para_counter = 0
@@ -170,7 +170,7 @@ while number < len(edit_emptycornel) - 1:
         counter_repeat += 1
 
     if len(sentancestaken) < 1:
-        print(" ")
+        print("")
     else:
         sentancestaken.sort()
         twenty_six = sentancestaken.count(len(paratext) - 1)
@@ -179,7 +179,7 @@ while number < len(edit_emptycornel) - 1:
             while counter26 < twenty_six:
                 sentancestaken.remove(len(paratext) - 1)
                 counter26 += 1
-        print(sentancestaken)
+        #print(sentancestaken)
         counter_outlie = 0
         while counter_outlie < len(sentancestaken):
             if sentancestaken[counter_outlie] > sentancestaken[5] + 7:
@@ -187,10 +187,10 @@ while number < len(edit_emptycornel) - 1:
             else:
                 counter_outlie += 1
         if len(sentancestaken) < 1:
-            print(" ")
+            print("")
         else:
             final_para = list(range(sentancestaken[0], (sentancestaken[len(sentancestaken) - 1]) + 1))
-            print(final_para)
+            #print(final_para)
             # print(paratext[final_para[0]])
 
             counter_final = 0
@@ -200,63 +200,35 @@ while number < len(edit_emptycornel) - 1:
                 counter_final += 1
             # print(block)
 
-            import nltk 
-            from nltk.corpus import stopwords
-            from nltk.tokenize import word_tokenize, sent_tokenize
-
-            # Input text - to summarize 
-            text = block
-
-            # Tokenizing the text
-            stopWords = set(stopwords.words("english"))
-            words = word_tokenize(text)
-
-            # Creating a frequency table to keep the 
-            # score of each word
-
-            freqTable = dict()
-            for word in words:
-                word = word.lower()
-                if word in stopWords:
-                    continue
-                if word in freqTable:
-                    freqTable[word] += 1
-                else:
-                    freqTable[word] = 1
-
-            # Creating a dictionary to keep the score
-            # of each sentence
-            sentences = sent_tokenize(text)
-            sentenceValue = dict()
-            # print(sentences)
-            for sentence in sentences:
-                for word, freq in freqTable.items():
-                    if word in sentence.lower():
-                        if sentence in sentenceValue:
-                            sentenceValue[sentence] += freq
-                        else:
-                            sentenceValue[sentence] = freq
 
 
+#Summarization
 
-            sumValues = 0
-            for sentence in sentenceValue:
-                sumValues += sentenceValue[sentence]
+#open text file
+text_file = open("C:/Users/prana/Documents/GitHub/Notes/data.txt", "w")
 
-            # Average value of a sentence from the original text
+#write string to file
+text_file.write(block)
+        
+#close file
+text_file.close()
 
-            average = int(sumValues / len(sentenceValue))
 
-            # Storing sentences into our summary.
-            summary = ''
-            for sentence in sentences:
-                if (sentence in sentenceValue) and (sentenceValue[sentence] > (1.2 * average)):
-                    summary += " " + sentence
-            if '1. ' in cornel_splited_str[number] or '2. ' in cornel_splited_str[number] or '3. ' in cornel_splited_str[number] or '4. ' in empty_cornel[number]:
-                print(" ")
-            else:
-                print(cornel_splited_str[number])
-                print("")
-                print(summary)
-                print(" ")
-    number +=1
+import http.client
+
+conn = http.client.HTTPSConnection("meaningcloud-summarization-v1.p.rapidapi.com")
+
+headers = {
+    'Accept': "application/json",
+    'X-RapidAPI-Key': "05820c2b4emshe8ad672ce51e1a4p1732e7jsn196f3864394f",
+    'X-RapidAPI-Host': "meaningcloud-summarization-v1.p.rapidapi.com"
+    }
+
+conn.request("GET", "/summarization-1.0?sentences=5&txt=C:/Users/prana/Documents/GitHub/Notes/data.txt", headers=headers)
+
+res = conn.getresponse()
+data = res.read()
+
+print(data.decode("utf-8"))
+
+
