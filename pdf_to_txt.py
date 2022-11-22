@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter import filedialog
+import requests
 
 root = tk.Tk()
 root.withdraw()
@@ -206,6 +207,7 @@ while number < len(edit_emptycornel) - 1:
             else:
                 if len(morewords_cornel) > 19 and len(final_para) < 3:
                     final_para.append(final_para[len(final_para) -1] + 1)
+                    final_para.append(final_para[len(final_para) -1] + 1)
             print(final_para)
 
             counter_final = 0
@@ -223,21 +225,33 @@ while number < len(edit_emptycornel) - 1:
 
 
 
-#summarization
-import tkinter as tk
-from tkinter import filedialog
 
-root = tk.Tk()
-root.withdraw()
+            url = "https://meaningcloud-summarization-v1.p.rapidapi.com/summarization-1.0"
 
-file_path = filedialog.askopenfilename()
+            querystring = {"sentences":"5","txt":block}
 
-with open(file_path, 'a') as f:
-    f.write("\n" + saver[number] + "\n\n" + block + "\n\n\n")
+            headers = {
+	            "Accept": "application/json",
+	            "X-RapidAPI-Key": "05820c2b4emshe8ad672ce51e1a4p1732e7jsn196f3864394f",
+	            "X-RapidAPI-Host": "meaningcloud-summarization-v1.p.rapidapi.com"
+            }
+
+            response = requests.request("GET", url, headers=headers, params=querystring)
+
+            summary = response.text
 
 
-with open(file_path, 'r') as f:
-    contents = f.read()
-print(contents)
+           
+            if summary == " " or summary == "":
+                zero = 0
+            else:
+                print(_saver[number])
+                print("")
+                print(summary)
+                print(" ")
+                with open(file_path, 'a') as f:
+                    f.write("\n" + _saver[number] + "\n\n" + summary + "\n\n\n")
+    number +=1
+        
 
 
