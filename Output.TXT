@@ -1,1 +1,56 @@
  
+ Unit 7 Industrial and Economic Development   Patterns and Processes  Name:   Chapter 19: Measuring Human Development  Class/Period:    Date:   19.1 How Is Development Measured ? 
+
+
+{"status":{"code":"0","msg":"OK","credits":"1","remaining_credits":"452831"},"summary":"Development in the general sense is the process of change in the nature and activities of the economy of a region or country and subsequent increases in the prosperity of that place. This chapter focuses on human development—the processes involved in the improvement of people’s freedoms, rights, capabilities, choices, and material conditions. Although the development of individuals is important, the concept of human development in this case applies to the collective population of a country or region. Geographers look at economic and social indicators in categories such as available resources, productivity, and education to measure the standard of living of a population."}
+
+
+
+Questions:  Economic Indicators (human development, core countries, periphery  countries, and semi -periphery countries)  
+
+
+{"status":{"code":"0","msg":"OK","credits":"1","remaining_credits":"452831"},"summary":"Development in the general sense is the process of change in the nature and activities of the economy of a region or country and subsequent increases in the prosperity of that place. Although the development of individuals is important, the concept of human development in this case applies to the collective population of a country or region. [...] Core countries represent the most diversified economies, highest levels of education, greatest levels of productivity, most advanced technologies, and highest standards of living. Countries in the periphery have less-diverse economies, lower levels of education and productivity, insufficient health-care systems and infrastructure, and lower standards of living. Between the core countries and peripheral countries are semi-peripheral countries, which share some elements of both."}
+
+
+
+ Income (Gross Domestic Product, Gross National Product, Gross National  Income, Use the chart at the top of page 522 -list the top 5 countries, scanning  the chart, are most of the countries core, periphery, or semi -periphery?)  
+
+
+{"status":{"code":"0","msg":"OK","credits":"1","remaining_credits":"452831"},"summary":"GDP and GNP can also be converted into per capita data. For example, GDP per capita is the Gross Domestic Product divided by a country’s midyear population. [...] However, GNP is often not the most accurate measure, as it is affected by international exchange rates. [...] The variation between a country’s GDP and GNI can be very small if the difference between a country’s income and its global payments is minimal. For example, in 2018, the GNI per capita of the United States was only 1.5 percent higher than the U.S. GDP per capita."}
+
+
+
+  Economic Structure (As countries develop what sector do most of the population work  in, formal sector, money collected by the formal sector is used how, informal sector,   negatives of the informal sector, % of informal sector in core vs periphery countries)  
+
+
+{"status":{"code":"0","msg":"OK","credits":"2","remaining_credits":"452830"},"summary":"In addition to classifying economic sectors, the structure of an economy can also be broken into two categories: the formal sector and the informal sector. The formal sector includes businesses, enterprises, and other economic activities that have government supervision, monitoring, and protection, and are taxed. The taxes collected from businesses and workers most often are used by a country to finance a variety of public services. [...] The informal sector, sometimes called the informal economy, is any part of a country’s economy that is outside of government monitoring or regulation and is not taxed. [...] But workers in the informal sector do not have formal employment contracts, regulated work conditions, or fixed hours of work."}
+
+
+
+  Fossil Fuels and Renewable Energy  (fossil fuels, who uses the most fossil fuels, China)  
+
+
+{"status":{"code":"0","msg":"OK","credits":"1","remaining_credits":"452831"},"summary":"FOSSIL FUELS AND RENEWABLE ENERGY Measuring the use of fossil fuels (hydrocarbon-containing material of biological origin that can be burned for energy) or of renewable energy (energy from a source that is not depleted when used) can indicate a country’s level of development. In the approximately 250 years since the Industrial Revolution began, the world has come to rely on fossil fuels for its main energy supply. [...] These countries have large deposits of fossil fuels, which gives them primary access to these sources that drive their economies. [...] But countries also explore ways to use renewable energy and alternative fuel sources. [...] Considering that fossil fuels are nonrenewable and could eventually become depleted, and the fact that burning fossil fuels harms the environment, planning for and implementing renewable energy programs improves a country’s energy infrastructure and development."}
+
+
+
+  Social Indicators (what non-economic factors are used to measure a country ’s level of  development, why is tfr high in periphery and low in core, role of healthcare and  education with regard to TFR, number of doctors per 1,000 people in core v periphery,  cultural factors affecting  TFR and political factors, IMR in core v periphery and why is  there a difference, life expectancy, literacy rates and education , where do we see low  literacy rates in the world)  
+
+
+{"status":{"code":"0","msg":"OK","credits":"2","remaining_credits":"452830"},"summary":"As you have read, the total fertility rate (TFR) is the average number of children one woman in a given region or country will have during her childbearing years. Social factors that affect a country’s TFR include level of health care and level of education for women. The total fertility rate is high in most peripheral countries, and although it has been trending down in recent years, the TFR still remains higher than the rates in core and semi-peripheral countries. [...] The country’s fertility rate in 2017 was 4.5. [...] Like total fertility rate, the infant mortality rate is higher in peripheral countries and lower in core countries; Chad’s IMR was 73.1 in 2017, while the United States had an infant mortality rate of 5.8 that same year."}
+
+
+
+    Human Development Index (the 3 dimensions used, limitations of the HDI ) 
+
+
+{"status":{"code":"0","msg":"OK","credits":"1","remaining_credits":"452831"},"summary":"The United Nations uses the Human Development Index (HDI) to determine overall levels of development of countries. This measure incorporates three key dimensions of human development: life expectancy at birth (health dimension), access to education measured in expected and mean years of schooling (education dimension), and standard of living measured by GNI per capita (economic dimension). [...] When determining HDI, health and education indicators are just as important as economic indicators. In 2018, the United States had a GNI per capita of $63,080, and its HDI ranking was 15 out of 189 countries and territories. [...] But since these countries have higher life expectancies than the United States, both Ireland and Germany had a higher HDI."}
+
+
+
+ 2. Describe the formal and informal sectors of an economy, and explain the connection  between the structure of an economy and economic  prosperity.  
+
+
+{"status":{"code":"0","msg":"OK","credits":"2","remaining_credits":"452830"},"summary":"ECONOMIC STRUCTURE The structure of an economy is another measure of development. Economic structure is connected to economic prosperity, and the level of development of a country can be predicted by examining the country’s economic structure. Most diversified economies result from populations who work in every economic sector, which you learned about in Chapter 18. [...] In addition to classifying economic sectors, the structure of an economy can also be broken into two categories: the formal sector and the informal sector. [...] The informal sector, sometimes called the informal economy, is any part of a country’s economy that is outside of government monitoring or regulation and is not taxed."}
+
+
