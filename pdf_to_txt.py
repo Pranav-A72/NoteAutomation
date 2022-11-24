@@ -255,3 +255,9 @@ while number < len(edit_emptycornel) - 1:
         
 
 
+
+#positioning, pdf overlay
+
+import fpdf 
+from fpdf import FPDF
+
