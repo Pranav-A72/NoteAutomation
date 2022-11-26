@@ -17,7 +17,7 @@ while pageNum > -1:
     pageNum -= 1
 
 cornel_splited_str = corneltext.splitlines(True)
-
+timesused = 0
 
 emptycounter = 0
 emptylimits = len(cornel_splited_str)
@@ -94,6 +94,18 @@ print(edit_emptycornel[28])
 morewords_cornel = edit_emptycornel[28].split()
 print(morewords_cornel)
 
+counter58 = 2
+ncounter = 0
+linebreaks = []
+while counter58 < len(_saver):
+    if _saver[counter58] == ' \n' or _saver[counter58] == '  \n' or _saver[counter58] == '   \n' or _saver[counter58] == '    \n':
+        ncounter += 1
+    else:
+        linebreaks.append(ncounter)
+        ncounter = 0
+    counter58 += 1
+
+print(linebreaks)
 
 import tkinter as tk
 from tkinter import filedialog
@@ -175,65 +187,70 @@ while number < len(edit_emptycornel) - 1:
                 counter_remove += 1
             counter_remove = 0
         counter_repeat += 1
- 
-    if len(sentancestaken) < 1:
-        zero = 0
+    
+    if ' \n' == _saver[number] or '  \n' == _saver[number] or '   \n' == _saver[number] or '  \n' == _saver[number]:
+      zero = 0
     else:
-        sentancestaken.sort()
-        twenty_six = sentancestaken.count(len(paratext) - 1)
-        counter26 = 0
-        if sentancestaken[len(sentancestaken)- 1] == len(paratext) - 1:
-            while counter26 < twenty_six:
-                sentancestaken.remove(len(paratext) - 1)
-                counter26 += 1
-        # print(sentancestaken)
-        counter_outlie = 0
-        while counter_outlie < len(sentancestaken):
-            if sentancestaken[counter_outlie] > sentancestaken[3] + 7:
-                sentancestaken.pop(counter_outlie)
-            else:
-                counter_outlie += 1
-        if len(sentancestaken) < 1:
-            zero = 0
+        if len(sentancestaken) < 1 and len(_saver[number]) > 2:
+            zero = 0 
+            summary = input("Answer")
         else:
-            
-            final_para = list(range(sentancestaken[0], (sentancestaken[len(sentancestaken) - 1]) + 1))
-            # print(final_para)
-            # print(paratext[final_para[0]])
-            if len(morewords_cornel) > 24 and len(final_para) < 3:
-                final_para.append(final_para[len(final_para) -1] + 1)
-                final_para.append(final_para[len(final_para) -1] + 1)
-                final_para.append(final_para[len(final_para) -1] + 1)
+            sentancestaken.sort()
+            twenty_six = sentancestaken.count(len(paratext) - 1)
+            counter26 = 0
+            if sentancestaken[len(sentancestaken)- 1] == len(paratext) - 1:
+                while counter26 < twenty_six:
+                    sentancestaken.remove(len(paratext) - 1)
+                    counter26 += 1
+            # print(sentancestaken)
+            counter_outlie = 0
+            while counter_outlie < len(sentancestaken):
+                if sentancestaken[counter_outlie] > sentancestaken[3] + 7:
+                    sentancestaken.pop(counter_outlie)
+                else:
+                    counter_outlie += 1
+        
+            if len(sentancestaken) < 1:
+                zero = 0
             else:
-                if len(morewords_cornel) > 19 and len(final_para) < 3:
+                
+                final_para = list(range(sentancestaken[0], (sentancestaken[len(sentancestaken) - 1]) + 1))
+                # print(final_para)
+                # print(paratext[final_para[0]])
+                if len(morewords_cornel) > 24 and len(final_para) < 3:
                     final_para.append(final_para[len(final_para) -1] + 1)
                     final_para.append(final_para[len(final_para) -1] + 1)
-            print(final_para)
+                    final_para.append(final_para[len(final_para) -1] + 1)
+                else:
+                    if len(morewords_cornel) > 19 and len(final_para) < 3:
+                        final_para.append(final_para[len(final_para) -1] + 1)
+                        final_para.append(final_para[len(final_para) -1] + 1)
+                print(final_para)
 
-            counter_final = 0
-            block = ""
-            while counter_final < len(final_para):
-                block = block + " " + paratext[final_para[counter_final]]
-                counter_final += 1
-            # print(block)
+                counter_final = 0
+                block = ""
+                while counter_final < len(final_para):
+                    block = block + " " + paratext[final_para[counter_final]]
+                    counter_final += 1
+                # print(block)
 
-        #WIKI ARTICLE START
-
-
+            #WIKI ARTICLE START
 
 
 
 
+            sentances = str.round(linebreaks[timesused] / 2)
+            timesused += 1
 
 
             url = "https://meaningcloud-summarization-v1.p.rapidapi.com/summarization-1.0"
 
-            querystring = {"sentences":"5","txt":block}
+            querystring = {"sentences":sentances,"txt":block}
 
             headers = {
-	            "Accept": "application/json",
-	            "X-RapidAPI-Key": "05820c2b4emshe8ad672ce51e1a4p1732e7jsn196f3864394f",
-	            "X-RapidAPI-Host": "meaningcloud-summarization-v1.p.rapidapi.com"
+                "Accept": "application/json",
+                "X-RapidAPI-Key": "05820c2b4emshe8ad672ce51e1a4p1732e7jsn196f3864394f",
+                "X-RapidAPI-Host": "meaningcloud-summarization-v1.p.rapidapi.com"
             }
 
             response = requests.request("GET", url, headers=headers, params=querystring)
@@ -241,51 +258,17 @@ while number < len(edit_emptycornel) - 1:
             summary = response.text
 
 
-           
-            if summary == " " or summary == "":
-                zero = 0
-            else:
-                print(_saver[number])
-                print("")
-                print(summary)
-                print(" ")
-                with open(file_path, 'a') as f:
-                    f.write("\n" + _saver[number] + "\n\n" + summary + "\n\n\n")
+        
+        if summary == " " or summary == "":
+            zero = 0
+        else:
+            print(_saver[number])
+            print("")
+            print(summary)
+            print(" ")
+            with open(file_path, 'a') as f:
+                f.write("\n" + _saver[number] + "\n\n" + summary + "\n\n\n")
     number +=1
         
 
 
-
-#positioning, pdf overlay
-"""
-import fpdf 
-from fpdf import FPDF
-
-from PyPDF2 import PdfFileWriter, PdfFileReader
-import io
-from reportlab.pdfgen import canvas
-from reportlab.lib.pagesizes import letter
-
-packet = io.BytesIO()
-can = canvas.Canvas(packet, pagesize=letter)
-can.drawString(10, 100, "Hello world")
-can.save()
-
-#move to the beginning of the StringIO buffer
-packet.seek(0)
-
-# create a new PDF with Reportlab
-new_pdf = PdfFileReader(packet)
-# read your existing PDF
-existing_pdf = PdfFileReader(open("original.pdf", "rb"))
-output = PdfFileWriter()
-# add the "watermark" (which is the new pdf) on the existing page
-page = existing_pdf.getPage(0)
-page.mergePage(new_pdf.getPage(0))
-output.addPage(page)
-# finally, write "output" to a real file
-outputStream = open("destination.pdf", "wb")
-output.write(outputStream)
-outputStream.close()
-
-"""
