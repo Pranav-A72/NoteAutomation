@@ -1,42 +1,56 @@
  
- Unit 7 Industrial and Economic Development   Patterns and Processes  Name:   Chapter 19: Measuring Human Development  Class/Period:    Date:   19.1 How Is Development Measured ? 
+Questions:  Gender Disparities  (what 2 measures does the UN use to track gender  inequality, Gender Development Index, what are the measures of the  GDI, Gender Inequality Index, range of scores on GII -you actually want  a 0.0 for this!, compare Afghanistan to Belgium, what has Iceland and Rwanda done, and what countries give the least attention to gender  parity)  
 
 
-{"status":{"code":"0","msg":"OK","credits":"1","remaining_credits":"410614"},"summary":"Development in the general sense is the process of change in the nature and activities of the economy of a region or country and subsequent increases in the prosperity of that place. This chapter focuses on human development—the processes involved in the improvement of people’s freedoms, rights, capabilities, choices, and material conditions. Although the development of individuals is important, the concept of human development in this case applies to the collective population of a country or region. Geographers look at economic and social indicators in categories such as available resources, productivity, and education to measure the standard of living of a population."}
-
-
-
-Questions:  Economic Indicators (human development, core countries, periphery  countries, and semi -periphery countries)  
-
-
-{"status":{"code":"0","msg":"OK","credits":"1","remaining_credits":"410614"},"summary":"Development in the general sense is the process of change in the nature and activities of the economy of a region or country and subsequent increases in the prosperity of that place. Although the development of individuals is important, the concept of human development in this case applies to the collective population of a country or region. [...] Core countries represent the most diversified economies, highest levels of education, greatest levels of productivity, most advanced technologies, and highest standards of living. Countries in the periphery have less-diverse economies, lower levels of education and productivity, insufficient health-care systems and infrastructure, and lower standards of living. Between the core countries and peripheral countries are semi-peripheral countries, which share some elements of both."}
+ The level of gender equality can be a measure of a country’s overall level of development. The first is the Gender Development Index (GDI), which calculates gender disparity in the three basic dimensions of human development: health, knowledge, and standard of living.  The second measure of gender inequality is the Gender Inequality Index (GII), which calculates inequality based on three categories: reproductive health, empowerment, and labormarket participation.
 
 
 
- Income (Gross Domestic Product, Gross National Product, Gross National  Income, Use the chart at the top of page 522 -list the top 5 countries, scanning  the chart, are most of the countries core, periphery, or semi -periphery?)  
+  Reproductive Health and the GII (what two measures are used for reproductive  health, Maternal Mortality Ratio, what two regions have the highest MMR,  adolescent birth rate, countries with the highest and lowest ABR and why)  
 
 
-{"status":{"code":"0","msg":"OK","credits":"1","remaining_credits":"410614"},"summary":"GDP and GNP can also be converted into per capita data. For example, GDP per capita is the Gross Domestic Product divided by a country’s midyear population. [...] However, GNP is often not the most accurate measure, as it is affected by international exchange rates. [...] The variation between a country’s GDP and GNI can be very small if the difference between a country’s income and its global payments is minimal. For example, in 2018, the GNI per capita of the United States was only 1.5 percent higher than the U.S. GDP per capita."}
-
-
-
-  Economic Structure (As countries develop what sector do most of the population work  in, formal sector, money collected by the formal sector is used how, informal sector,   negatives of the informal sector, % of informal sector in core vs periphery countries)  
-
-
-{"status":{"code":"0","msg":"OK","credits":"2","remaining_credits":"410613"},"summary":"In addition to classifying economic sectors, the structure of an economy can also be broken into two categories: the formal sector and the informal sector. The formal sector includes businesses, enterprises, and other economic activities that have government supervision, monitoring, and protection, and are taxed. The taxes collected from businesses and workers most often are used by a country to finance a variety of public services. [...] The informal sector, sometimes called the informal economy, is any part of a country’s economy that is outside of government monitoring or regulation and is not taxed. [...] But workers in the informal sector do not have formal employment contracts, regulated work conditions, or fixed hours of work."}
+The second measure of gender inequality is the Gender Inequality  Index, which calculates inequality based on three categories: reproductive health, empowerment, and l labor market participation. LDCs have the highest of both rates.
 
 
 
-  Fossil Fuels and Renewable Energy  (fossil fuels, who uses the most fossil fuels, China)  
+  Empowerment (Women ’s empowerment, 2 indicators of women ’s  empowerment, women ’s involvement in politics, women in politics in the US,  Rwanda as an outlier, Nordic countries, countries with less than 3% women with  seats in government, ratio of adult women with some secondary education, what  prevents women and girls  from participating in education)  
 
 
-{"status":{"code":"0","msg":"OK","credits":"1","remaining_credits":"410614"},"summary":"FOSSIL FUELS AND RENEWABLE ENERGY Measuring the use of fossil fuels (hydrocarbon-containing material of biological origin that can be burned for energy) or of renewable energy (energy from a source that is not depleted when used) can indicate a country’s level of development. In the approximately 250 years since the Industrial Revolution began, the world has come to rely on fossil fuels for its main energy supply. [...] These countries have large deposits of fossil fuels, which gives them primary access to these sources that drive their economies. [...] But countries also explore ways to use renewable energy and alternative fuel sources. [...] Considering that fossil fuels are nonrenewable and could eventually become depleted, and the fact that burning fossil fuels harms the environment, planning for and implementing renewable energy programs improves a country’s energy infrastructure and development."}
+ Women’s empowerment includes women’s options and access to participate fully in the social and economic spheres of a society. The GII uses two indicators to measure women’s empowerment: political representation and educational attainment.
 
 
 
-  Social Indicators (what non-economic factors are used to measure a country ’s level of  development, why is tfr high in periphery and low in core, role of healthcare and  education with regard to TFR, number of doctors per 1,000 people in core v periphery,  cultural factors affecting  TFR and political factors, IMR in core v periphery and why is  there a difference, life expectancy, literacy rates and education , where do we see low  literacy rates in the world)  
+  Labor -Market Participation ( women at work in core v periphery countries,  trends seen)  
 
 
-{"status":{"code":"0","msg":"OK","credits":"2","remaining_credits":"410613"},"summary":"As you have read, the total fertility rate (TFR) is the average number of children one woman in a given region or country will have during her childbearing years. Social factors that affect a country’s TFR include level of health care and level of education for women. The total fertility rate is high in most peripheral countries, and although it has been trending down in recent years, the TFR still remains higher than the rates in core and semi-peripheral countries. [...] The country’s fertility rate in 2017 was 4.5. [...] Like total fertility rate, the infant mortality rate is higher in peripheral countries and lower in core countries; Chad’s IMR was 73.1 in 2017, while the United States had an infant mortality rate of 5.8 that same year."}
+ The second measure of gender inequality is the Gender Inequality Index (GII), which calculates inequality based on three categories: reproductive health, empowerment, and labormarket participation.
+
+
+
+  Use the ratio of women to men in the labor market map on page 530. Which  regions of the world have the highest female labor market participation?  Lowest? What surprises you?  
+
+
+Core countries and surprisingly,  central Africa has the highest market participation. North Africa has the lowest.
+
+
+
+   1. Explain the similarities between the maternal mortality ratio  and the  adolescent birth rate.  
+
+
+MMR measures how many deaths of mothers there are before or shortly after death. ABR measures the number of births from women  to . Both display a country’s development.
+
+
+
+ 2. Explain how female labor -market participation can affect a country ’s  economic development.  
+
+
+Labor market participation can affect economic development by providing a stronger workforce, introducing new ideas, and lowering FTR.
+
+
+
+  Case Study. “Women -Only ” Cities. What happened in 2015 and 2018 for Saudi  women? Explain how women- only cities can positively impact Saudi women and  the country as a whole.  
+
+
+Women in Saudi were granted the right to vote, drive, and own property. Womenonly cities have created more equal and safe places for women to work and have access to education. Created many new jobs.
 
 
