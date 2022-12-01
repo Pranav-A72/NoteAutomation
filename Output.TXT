@@ -1,56 +1,98 @@
  
-Questions:  Gender Disparities  (what 2 measures does the UN use to track gender  inequality, Gender Development Index, what are the measures of the  GDI, Gender Inequality Index, range of scores on GII -you actually want  a 0.0 for this!, compare Afghanistan to Belgium, what has Iceland and Rwanda done, and what countries give the least attention to gender  parity)  
+Questions:  Rostow’s Stages of Economic Growth  
 
 
- The level of gender equality can be a measure of a country’s overall level of development. The first is the Gender Development Index (GDI), which calculates gender disparity in the three basic dimensions of human development: health, knowledge, and standard of living.  The second measure of gender inequality is the Gender Inequality Index (GII), which calculates inequality based on three categories: reproductive health, empowerment, and labormarket participation.
-
-
-
-  Reproductive Health and the GII (what two measures are used for reproductive  health, Maternal Mortality Ratio, what two regions have the highest MMR,  adolescent birth rate, countries with the highest and lowest ABR and why)  
-
-
-The second measure of gender inequality is the Gender Inequality  Index, which calculates inequality based on three categories: reproductive health, empowerment, and l labor market participation. LDCs have the highest of both rates.
+ Rostow categorized countries from traditional to modern.
 
 
 
-  Empowerment (Women ’s empowerment, 2 indicators of women ’s  empowerment, women ’s involvement in politics, women in politics in the US,  Rwanda as an outlier, Nordic countries, countries with less than 3% women with  seats in government, ratio of adult women with some secondary education, what  prevents women and girls  from participating in education)  
+  Stage 1: Traditional Society  
 
 
- Women’s empowerment includes women’s options and access to participate fully in the social and economic spheres of a society. The GII uses two indicators to measure women’s empowerment: political representation and educational attainment.
-
-
-
-  Labor -Market Participation ( women at work in core v periphery countries,  trends seen)  
-
-
- The second measure of gender inequality is the Gender Inequality Index (GII), which calculates inequality based on three categories: reproductive health, empowerment, and labormarket participation.
+In the simplest form of organization, political power is local, regional, or based on land.
 
 
 
-  Use the ratio of women to men in the labor market map on page 530. Which  regions of the world have the highest female labor market participation?  Lowest? What surprises you?  
+  Stage 2: Preconditions for Takeoff  
 
 
-Core countries and surprisingly,  central Africa has the highest market participation. North Africa has the lowest.
-
-
-
-   1. Explain the similarities between the maternal mortality ratio  and the  adolescent birth rate.  
-
-
-MMR measures how many deaths of mothers there are before or shortly after death. ABR measures the number of births from women  to . Both display a country’s development.
+Progressive elements begin to form, and people seek knowledge and break free from the tradition. 
 
 
 
- 2. Explain how female labor -market participation can affect a country ’s  economic development.  
+ Stage 3: Takeoff  
 
 
-Labor market participation can affect economic development by providing a stronger workforce, introducing new ideas, and lowering FTR.
+Political, social, and institutional frameworks in social change. Urbanization and infrastructure improve.
 
 
 
-  Case Study. “Women -Only ” Cities. What happened in 2015 and 2018 for Saudi  women? Explain how women- only cities can positively impact Saudi women and  the country as a whole.  
+  Stage 4: Drive to Maturity  
 
 
-Women in Saudi were granted the right to vote, drive, and own property. Womenonly cities have created more equal and safe places for women to work and have access to education. Created many new jobs.
+The economy keeps progressing in a period of selfsustained growth.
+
+
+
+  Stage 5: High Mass Consumption  
+
+
+Production shifts from industrial manufacturing to consumer goods and services.
+
+
+
+ Great Britain, the USA, Canada, Russia, and Singapore with regard to  the model  
+
+
+Early countries were: Great Britain, USA, and Canada. Singapore is now highly modernized.
+
+
+
+ Limitations of the Stages of Economic Growth Model  
+
+
+Based on old world data and growth differs by region. Does not take in geographic influences or challenges. Assumes all countries follow the same progression of development.
+
+
+
+  Wallerstein ’s World System Theory  (core countries, Mexico, Angola)  
+
+
+Describes the relationships of countries and the development in the world. Core countries have control. Mexico has areas where opportunities are limited.
+
+
+
+  Limitations of World System Theory  
+
+
+The model is too focused on economics. It works as a historical analysis but is not the best measure of modern development.
+
+
+
+  Dependency Theory ( how it works, who benefits, what is the underlying cause of  dependency, limitations of the theory)  
+
+
+It describes the challenges faced by poorer countries and the relationships with richer ones. Peripherals offer cheap materials to the global market. Core buy materials and hire cheap labor.
+
+
+
+  Questions:  Commodity Dependence (oil , Venezuela, Saudi Arabia, UN report)  
+
+
+Commodity dependence: when 60 percent of exports are tied to one thing such as oil. When prices fell, Venezuela could not meet its debt obligations. 
+
+
+
+ 1. Compare Rostow’s Stages of economic growth, world system  theory, and dependency theory.  
+
+
+Rostow's models economic growth. Wallerstein's is a development analysis. Dependency theory describes the challenges faced by poorer countries.
+
+
+
+ 2. Evaluate the degree to which commodity dependence slows and  fuels economic development.  
+
+
+Commodity dependence can negatively affect economic growth because it increases the vulnerability of commoditydependent countries to negative commodity price shocks.
 
 

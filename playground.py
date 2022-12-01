@@ -40,7 +40,7 @@ string_counter = 0
 def setcolor(can):
     can.setFillColorRGB(0, 0.1, 0.5)
 can.line(2,2,2, 2)
-jumper = 606
+jumper = 749 - 23.8 * 2
 setcolor(can)
 # while string_counter < len(lines):
 print(string_counter)
@@ -48,6 +48,7 @@ stringfinal = strings[string_counter]
 print(stringfinal)
 characters = ([*stringfinal])
 print(string_counter)
+can.showPage()
 can.showPage()
 jumplines = (lines[string_counter] - 1)* 22
 while counter_char < len(characters):
@@ -76,7 +77,7 @@ while counter_char < len(characters):
     if (jumper + ycount * 21.7) <= 0:
         can.showPage()
         ycount = 0
-        jumper = 580
+        jumper = 577
 ycount = 0
 jumper = jumper - jumplines
 x = 185
@@ -92,8 +93,8 @@ new_pdf = PdfFileReader(packet)
 existing_pdf = PdfFileReader(open('current.pdf', "rb"))
 output = PdfFileWriter()
 # add the "watermark" (which is the new pdf) on the existing page
-page = existing_pdf.getPage(1)
-page.mergePage(new_pdf.getPage(1))
+page = existing_pdf.getPage(2)
+page.mergePage(new_pdf.getPage(2))
 output.addPage(page)
 # page = existing_pdf.getPage(1)
 # page.mergePage(new_pdf.getPage(1))

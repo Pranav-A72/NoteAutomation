@@ -19,7 +19,10 @@ pchecker = 0
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 
-pdfmetrics.registerFont(TTFont('TestFont0', 'Myfont-Regular.ttf'))
+#toauto check every answer mark as True
+forcedanswertoggle = True
+
+pdfmetrics.registerFont(TTFont('TestFont0', 'Boesjake0-Regular.ttf'))
 pdfmetrics.registerFont(TTFont('TestFont1', 'Jakehand1-Regular.ttf'))
 pdfmetrics.registerFont(TTFont('TestFont2', 'Jakehand2-Regular.ttf'))
 pdfmetrics.registerFont(TTFont('TestFont3', 'Boesjake3-Regular.ttf'))
@@ -37,7 +40,7 @@ string_counter = 0
 def setcolor(can):
     can.setFillColorRGB(0, 0.1, 0.5)
 can.line(2,2,2, 2)
-jumper = 524
+jumper = 580
 
 
 root = tk.Tk()
@@ -257,7 +260,7 @@ while number < len(edit_emptycornel) - 1:
     if ' \n' == _saver[number] or '  \n' == _saver[number] or '   \n' == _saver[number] or '  \n' == _saver[number]:
       zero = 0
     else:
-        if len(sentancestaken) < 1 and len(_saver[number]) > 2 or "1. " in _saver[number] or "3. " in _saver[number] or "2. " in _saver[number] or "4. " in _saver[number] or "Name: " in _saver[number] or "page" in _saver[number] or "Case Study" in _saver[number] or "Reproductive Health and the GII" in _saver[number]:
+        if len(sentancestaken) < 1 and len(_saver[number]) > 2 or "1. " in _saver[number] or "3. " in _saver[number] or "2. " in _saver[number] or "4. " in _saver[number] or "Name: " in _saver[number] or "page" in _saver[number] or "Case Study" in _saver[number] or "Reproductive Health and the GII" in _saver[number] or forcedanswertoggle == True:
             zero = 0 
             finalsummary = input("Answer")
         else:
@@ -355,32 +358,36 @@ while number < len(edit_emptycornel) - 1:
             finalsummary = finalsummary.replace("-", "")
         if "As you have read, t" in finalsummary:
             finalsummary = finalsummary.replace("As you have read, t", "T")
-        if "1" in finalsummary:
-            finalsummary = finalsummary.replace("1", "")
-        if "2" in finalsummary:
-            finalsummary = finalsummary.replace("2", "")
-        if "3" in finalsummary:
-            finalsummary = finalsummary.replace("3", "")
-        if "4" in finalsummary:
-            finalsummary = finalsummary.replace("4", "")
-        if "5" in finalsummary:
-            finalsummary = finalsummary.replace("5", "")
-        if "6" in finalsummary:
-            finalsummary = finalsummary.replace("6", "")
-        if "7" in finalsummary:
-            finalsummary = finalsummary.replace("7", "")
-        if "8" in finalsummary:
-            finalsummary = finalsummary.replace("8", "")
-        if "9" in finalsummary:
-            finalsummary = finalsummary.replace("9", "")
-        if "0" in finalsummary:
-            finalsummary = finalsummary.replace("0", "")
+        # if "1" in finalsummary:
+        #     finalsummary = finalsummary.replace("1", "")
+        # if "2" in finalsummary:
+        #     finalsummary = finalsummary.replace("2", "")
+        # if "3" in finalsummary:
+        #     finalsummary = finalsummary.replace("3", "")
+        # if "4" in finalsummary:
+        #     finalsummary = finalsummary.replace("4", "")
+        # if "5" in finalsummary:
+        #     finalsummary = finalsummary.replace("5", "")
+        # if "6" in finalsummary:
+        #     finalsummary = finalsummary.replace("6", "")
+        # if "7" in finalsummary:
+        #     finalsummary = finalsummary.replace("7", "")
+        # if "8" in finalsummary:
+        #     finalsummary = finalsummary.replace("8", "")
+        # if "9" in finalsummary:
+        #     finalsummary = finalsummary.replace("9", "")
+        # if "0" in finalsummary:
+        #     finalsummary = finalsummary.replace("0", "")
         if ".; . " in finalsummary:
             finalsummary = finalsummary.replace("0", "")
         if "m. t" in finalsummary:
             finalsummary = finalsummary.replace("0", "m t")
-
-
+        print(_saver[number])
+        isBig = input("Is bold: ")
+        if isBig == "y" or isBig == "1":
+            lending = 23.8
+        else:
+            lending = 21.4
         
         if finalsummary == " " or finalsummary == "" or number == 0 or number == 1:
             zero = 0
@@ -398,21 +405,21 @@ while number < len(edit_emptycornel) - 1:
             if number != 4:
                 print(number)
                 if " Participation (" in _saver[number]:
-                    jumplines = (linebreaks[string_counter + 1])* 21.7 + 40
+                    jumplines = (linebreaks[string_counter + 1])* lending + 40
                 elif len(_saver[number]) < 83:
-                    jumplines = (linebreaks[string_counter + 1])* 21.7 + 21.7
+                    jumplines = (linebreaks[string_counter + 1])* lending + lending
                     # jumplines = (linebreaks[string_counter + 2] - 1)* 22 + 55
                 elif len(_saver[number ]) < 160:
                     
-                    jumplines = (linebreaks[string_counter + 1])* 21.7 + 28
+                    jumplines = (linebreaks[string_counter + 1])* lending + 28
                 elif len(_saver[number]) < 280:
         
-                    jumplines = (linebreaks[string_counter + 1])* 21.7 + 37
+                    jumplines = (linebreaks[string_counter + 1])* lending + 37
                 elif len(_saver[number]) < 375:
         
-                    jumplines = ((linebreaks[string_counter + 1])-5)* 21.7 + 70
+                    jumplines = ((linebreaks[string_counter + 1])-5)* lending + 70
                 else:
-                    jumplines = (linebreaks[string_counter + 1])* 21.7 + 77
+                    jumplines = (linebreaks[string_counter + 1])* lending + 77
                 
                 jumper = jumper - jumplines
                 print(jumper)
@@ -423,20 +430,22 @@ while number < len(edit_emptycornel) - 1:
                     jumper = 749
                     new_page_check = 1
                     if "Income (Gross Domestic Product" in _saver[number]:
-                        jumplines = 44 + 21.7
-                    elif len(_saver[number]) < 90:
-                        jumplines =  21.7 + 21.7
+                        jumplines = 44 + lending
+                    elif len(_saver[number]) < 55:
+                        jumplines =  lending * 4 + lending
+                    elif len(_saver[number]) < 83 :
+                        jumplines =  lending + lending
                         # jumplines = (linebreaks[string_counter + 2] - 1)* 22 + 55
                     elif len(_saver[number ]) < 160:
                         
-                        jumplines =  28 + 21.7
+                        jumplines =  30 + lending
                     elif len(_saver[number]) < 280:
                 
-                        jumplines =  37 + 21.7
+                        jumplines =  37 + lending
                     elif len(_saver[number]) < 375:
-                        jumplines = 75 + 21.7 * 4
+                        jumplines = 75 + lending * 4
                     else:
-                        jumplines = 77 + 21.7
+                        jumplines = 77 + lending
                     jumper = jumper - jumplines
                     print(jumper)
                     print(ycount)
@@ -457,8 +466,18 @@ while number < len(edit_emptycornel) - 1:
                     wordspacing = random.randrange(280, 370) / 10
                     
                     can.setFont("TestFont" + fontnum, dontsize)
-                  
-                    can.drawString(x, (jumper + ycount * 21.7), characters[counter_char], wordSpace= wordspacing, charSpace= charvar)
+                    if isBig == "0":
+                        if ycount < -2:
+                            lending = 23.8
+                        print(lending)
+                    if isBig == "1":
+                        print(ycount)
+                        if ycount >= -2:
+                            lending = 23.8
+                        else:
+                            lending = 21.7
+                        print(lending)
+                    can.drawString(x, (jumper + ycount * lending), characters[counter_char], wordSpace= wordspacing, charSpace= charvar)
                 
                     if characters[counter_char] == " ":
                         x = x + wordspacing2 + 3
