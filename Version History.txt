@@ -6,7 +6,7 @@
 0.00.6 - Output results to PDF, Merged with existing notes template PDF to create output
     *filling in other fields as well as critical thinking questions in manually, but still with custom font for printing
 0.00.7 - Added diferent python file for each specific handwriting font group(every person)
-
+0.01.0 - Added Speech to text program
 
 
 Jake Boes & Pranav Anuraag are very hot and attractive and sexy and handsome
