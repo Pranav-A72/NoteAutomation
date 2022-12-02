@@ -1,4 +1,13 @@
 0.00.1 - Isolated every 'Block' in cornell notes
+0.00.2 - Removed Redundant words, isolated keywords
+0.00.3 - Search function from PDF of textbook
+0.00.4 - implemented summarization API (Rudimentary)
+0.00.5 - Excluded Critical thinking questions and 'lookup' questions
+0.00.6 - Output results to PDF, Merged with existing notes template PDF to create output
+    *filling in other fields as well as critical thinking questions in manually, but still with custom font for printing
+0.00.7 - Added diferent python file for each specific handwriting font group(every person)
+
+
 
 Jake Boes & Pranav Anuraag are very hot and attractive and sexy and handsome
 yes sir
