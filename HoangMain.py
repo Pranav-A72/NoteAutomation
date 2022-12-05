@@ -50,9 +50,9 @@ packet = io.BytesIO()
 can = canvas.Canvas(packet, pagesize=letter)
 
 #Font creation
-pdfmetrics.registerFont(TTFont('TestFont0', 'Hoanglondon0-Regular.ttf'))
-pdfmetrics.registerFont(TTFont('TestFont1', 'Hoanglondon0-Regular.ttf'))
-pdfmetrics.registerFont(TTFont('TestFont2', 'Hoanglondon2-Regular.ttf'))
+pdfmetrics.registerFont(TTFont('TestFont0', 'Anuraagpranav1-Regular.ttf'))
+pdfmetrics.registerFont(TTFont('TestFont1', 'Anuraagpranav2-Regular.ttf'))
+pdfmetrics.registerFont(TTFont('TestFont2', 'Anuraagpranav3-Regular.ttf'))
 
 
 fonts = ['TestFont', 'TestFont1', 'TestFont2']
