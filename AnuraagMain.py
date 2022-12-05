@@ -27,8 +27,8 @@ indentmax = 3
 wordspacemin = 7
 wordspacemax = 12
 
-charspacemin = 84
-charspacemax = 87
+charspacemin = 75
+charspacemax = 80
 
 
 #Counters
@@ -37,7 +37,7 @@ counter_char = 0
 pchecker = 0
 pagecounter = 0
 string_counter = 0
-jumper = 542
+jumper = 515
 removed = 0
 timesused = 0
 emptycounter = 0
@@ -52,7 +52,7 @@ can = canvas.Canvas(packet, pagesize=letter)
 #Font creation
 pdfmetrics.registerFont(TTFont('TestFont0', 'Anuraagpranav1-Regular.ttf'))
 pdfmetrics.registerFont(TTFont('TestFont1', 'Anuraagpranav2-Regular.ttf'))
-pdfmetrics.registerFont(TTFont('TestFont2', 'Anuraagpranav3-Regular.TTFont'))
+pdfmetrics.registerFont(TTFont('TestFont2', 'Anuraagpranav3-Regular.ttf'))
 
 
 fonts = ['TestFont', 'TestFont1', 'TestFont2']
@@ -405,7 +405,7 @@ while number < len(edit_emptycornel) - 1:
                 if " Participation (" in _saver[number]:
                     jumplines = (linebreaks[string_counter + 1])* lending + 40
                 elif len(_saver[number]) < 93:
-                    jumplines = (linebreaks[string_counter + 1])* lending + lending 
+                    jumplines = (linebreaks[string_counter + 1])* lending + lending + 6
                     # jumplines = (linebreaks[string_counter + 2] - 1)* 22 + 55
                 elif len(_saver[number ]) < 180:
                     
@@ -427,8 +427,8 @@ while number < len(edit_emptycornel) - 1:
                     ycount = 0
                     jumper = 749
                     new_page_check = 1
-                    if "New Man" in _saver[number]:
-                        jumplines =  30 + lending
+                    if "Go to page 561" in _saver[number]:
+                        jumplines =  21 + lending * 4
                     elif len(_saver[number]) < 55:
                         jumplines =  lending * 4 + lending
                     elif len(_saver[number]) < 83 :

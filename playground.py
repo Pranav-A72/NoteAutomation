@@ -6,7 +6,7 @@ from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import letter
 packet = io.BytesIO()
 import random
-string0 = "sample"
+string0 = "sample test and trials and stuff this is fakofuashfasiufgkae aohfljsdf aifhhnsljxns"
 string1 = "GDP and GNP are ways of measuring economic growth within a country. Formal and inform sectors are things. Informal is like government and stuff anf formal is another thing that relates to sectors."
 string2 = 'In addition to classifying economic sectors, the structure of an economy can also be broken into two categories: the formal sector and the informal sector. The formal sector includes businesses, enterprises, and other economic activities that have government supervision, monitoring, and protection, and are taxed.'
 lines = [5, 9 , 9]
@@ -40,7 +40,7 @@ string_counter = 0
 def setcolor(can):
     can.setFillColorRGB(0, 0.1, 0.5)
 can.line(2,2,2, 2)
-jumper = 502
+jumper = 515
 
 # while string_counter < len(lines):
 print(string_counter)
@@ -55,7 +55,7 @@ while counter_char < len(characters):
     fontnum = str(random.randrange(0, 3))
     intentran = random.randrange(2, 3)
     wordspacing = random.randrange(7, 12)
-    char_spacing2 = random.randrange(84, 87) / 10
+    char_spacing2 = random.randrange(70, 75) / 10
    
     can.setFont("TestFont" + fontnum, dontsize)
     def setcolor(can):
